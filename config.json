@@ -1,0 +1,83 @@
+{
+  "base_url": "https://{{cpvs.services.domain}}",
+  "monitoring_apis": [
+    {
+      "name": "Fund-Value-Exp",
+      "method": "GET",
+      "endpoint": "/fundvalue-nyl-exp/api/fundUnitValues",
+      "params": {
+        "productUnitValueCd": "C18"
+      },
+      "description": "Fund Value Export API"
+    },
+    {
+      "name": "Fund-Value-Reload",
+      "method": "GET",
+      "endpoint": "/fundvalue-nyl-reload/api/fundUnitValues",
+      "params": {},
+      "description": "Fund Value Reload API"
+    },
+    {
+      "name": "LTC_COSTS",
+      "method": "GET",
+      "endpoint": "/ltc-costs-nyl-exp/api/costs",
+      "params": {},
+      "description": "LTC Costs API"
+    },
+    {
+      "name": "LTC-Costs-Load",
+      "method": "POST",
+      "endpoint": "/ltc-costs-nyl-load/api/costs",
+      "params": {},
+      "body": {},
+      "description": "LTC Costs Load API"
+    },
+    {
+      "name": "Producer-Search-P1.0",
+      "method": "GET",
+      "endpoint": "/producer-nyl-exp/api/1.0/producerProfile",
+      "params": {
+        "id": "0143279"
+      },
+      "description": "Producer Search API Version 1.0"
+    },
+    {
+      "name": "Producer-Search-withEmail-P1.0",
+      "method": "GET",
+      "endpoint": "/producer-nyl-exp/api/1.0/producerProfile",
+      "params": {
+        "email": "test@example.com"
+      },
+      "description": "Producer Search with Email API Version 1.0"
+    },
+    {
+      "name": "Producer-Search-P2.0",
+      "method": "GET",
+      "endpoint": "/producer-nyl-exp/api/2.0/producerProfile",
+      "params": {
+        "id": "0143279"
+      },
+      "description": "Producer Search API Version 2.0"
+    },
+    {
+      "name": "Producer-Search-withEmail-P2.0",
+      "method": "GET",
+      "endpoint": "/producer-nyl-exp/api/2.0/producerProfile",
+      "params": {
+        "email": "test@example.com"
+      },
+      "description": "Producer Search with Email API Version 2.0"
+    },
+    {
+      "name": "Producer-With-Mock",
+      "method": "GET",
+      "endpoint": "/producer-nyl-exp/api/mock/producerProfile",
+      "params": {
+        "id": "mock123"
+      },
+      "description": "Producer Mock API"
+    }
+  ],
+  "timeout": 30,
+  "retry_attempts": 3
+}
